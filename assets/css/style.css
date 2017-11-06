@@ -1,0 +1,278 @@
+.pageStyle {
+	background: url("../images/dust_scratches.png") repeat #eee;
+	color: #777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+
+h2 {
+	padding-bottom: 25px;
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 26px;
+	font-weight: bold;
+	border-bottom: 3px solid #ddd;
+
+}
+
+h3 {
+	padding-bottom: 20px;
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 3px solid #ddd;
+
+}
+
+p {
+	padding-top: 25px;
+	line-height: 2;
+}
+
+.bottom {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	padding: 20px 0px 20px 0px;
+	border-top: 8px solid #4aaaa5;
+	background: #666;
+	color: #ccc;
+	font-size: 12px;
+	text-align: center;
+
+}
+
+.connect {
+	display: inline-block;
+	position: absolute;
+	top: 40px;
+	right: 0;
+	padding: 30px;
+	width: 210px;
+	background: #fff;
+	border: 1px solid #ddd;
+
+
+}
+
+.content {
+	width: 960px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+
+}
+
+.portfolio {
+	
+	margin: 40px 40px 140px 0px;
+	padding: 30px;
+	background: #fff;
+	border: 1px solid #ddd;
+	width: 590px;
+}
+
+.top {
+	background: #fff;
+	width: 100%;
+	height: 90px;
+	border-bottom: solid 2px #ccc;
+}
+
+.logo {
+	float: left;
+	background: #4aaaa5;
+	padding: 32px 40px 32px 40px;
+	color: #fff;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+
+li {
+	display: inline-block;
+}
+
+.nav li {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.nav li:not(:last-child) { 
+    border-right: solid 1px #efefef;/* This will not give border to last li element */
+}
+
+.connect li {
+	padding-top: 25px;
+
+}
+
+.connect li:not(:last-child) { 
+	padding-right: 10px;
+}
+
+.nav {
+	float: right;
+	padding: 32px 0px 32px 40px;
+}
+
+.pic {
+	float: left;
+	padding-top: 25px;
+	padding-right: 25px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #777;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #777;
+    
+}
+
+a:hover {
+    text-decoration: none;
+    color: #4aaaa5;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-size: 14px;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #145d59;
+}
+
+input::placeholder {
+  color: #a9a9a9;
+}
+
+input {
+	font-size: 14px;
+}
+
+textarea {
+	height: 200px;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.gallery {
+
+	position: relative;
+	display: inline-block;
+}
+
+.leftgal {
+	margin: 30px 30px 0 0;
+}
+
+.rightgal {
+	margin: 30px 0 0 0;
+}
+
+.imageTitle {
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+	height: 40px;
+	background: #4aaaa5;
+	text-align: center;
+	color: #fff;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	padding-top: 20px;
+
+}
+@media screen and (max-width: 980px) {
+	.content {
+
+		width: 728px;
+	}
+	.portfolio, .contact {
+
+		width: 360px;
+	}
+
+	.pic {
+		width: 360px;
+		margin-bottom: 25px;
+	}
+	.gallery img {
+
+		width: 360px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.content {
+
+		width: 725px;
+	}
+	.portfolio, .contact {
+
+		width: 665px;
+		margin-bottom: 0px;
+
+	}
+	.pic, .gallery img {
+		width: 315px;
+	}
+	
+	.connect {
+		width: 665px;
+		position: relative;
+		margin-bottom: 140px;
+
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+
+	.content {
+		width: 600px;
+	}
+	.contact, .portfolio, .connect {
+		width: 540px;
+	}
+	.pic, .gallery img {
+		width: 540px;
+	}
+
+}
+
+
+
